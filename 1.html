@@ -1,88 +1,79 @@
 <!doctype html>
 <html>
   <head>
-    <title>Jamie Book</title>
+    <title>~Jamie's Book~</title>
     <meta charset="utf-8">
     <style>
+      html {
+        height: 100%;
+      }
       body {
         font-family:Malgun Gothic;
-        margin:0;
+        height: 100%;
       }
       a {
         color:black;
         text-decoration:none;
       }
-      a:visited {
+      .index a:visited {
         color:gray;
       }
       h1 {
-        font-size:50px;
         text-align:center;
-        border-bottom:1px solid gray;
+        border-bottom:1px gray solid;
+        padding:15px;
         margin:0;
-        padding:10px;
+        color:purple;
       }
-      #grid ol,ul {
-        /*border-right:1px solid gray;*/
-        margin:0;
-        font-size:15px;
+      ul {
+        color:purple;
+      }
+      #whole {
+        display:grid;
+        grid-template-columns:325px 1fr;
+        height:100%;
+      }
+      .index {
+        border-right:1px gray solid;
+      }
+      .index ol, ul {
         padding-left:30px;
       }
-      h3 {
-        color:red;
-      }
-      p {
-        color:green;
-      }
-      #grid {
-        display:grid;
-        grid-template-columns:300px 1fr;
-      }
-      #article {
-        padding-left:25px;
-      }
-      #grid .left {
-        border-right:1px solid gray;
+      .content {
+        padding-left:10px;
       }
     </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165263432-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-165263432-1');
-</script>
-
   </head>
+
   <body>
-    <h1><a href="index.html">Jamie가 각 해에 엄선한 책</a></h1>
-    <div id="grid">
-      <div class="left">
-        <ul>
-          <li>2019년</li>
+    <h1><a href="index.html" style="color:purple">~Jamie의 매 해 추천 책~</a></h1>
+    <div id="whole">
+      <div class="index">
+        <ul style="margin-bottom:0;">
+          <li>2019</li>
         </ul>
-        <ol>
-          <a href="1.html" style="color:red; text-decoration:underline"><li>12가지 인생의 법칙</li></a>
-          <a href="2.html"><li>왜 세계의 절반은 굶주리는가?</li></a>
+        <ol style="margin-top:0;">
+          <a href="1.html" style="color:red;"><li>12가지 인생의 법칙 ☜</li></a>
+          <a href="2.html"><li>왜 세계의 절반은 굶주리는가</li></a>
           <a href="3.html"><li>말그릇</li></a>
         </ol>
-        <ul>
-          <li>2020년</li>
+        <ul style="margin-bottom:0;">
+          <li>2020</li>
         </ul>
-        <ol>
-          <a href="4.html"><li>기본에 충실한 나라, 독일에서 배운다</li></a>
+        <ol style="margin-top:0;">
+          <a href="4.html"><li>기본에 충실한 나라 독일에서 배운다</li></a>
           <a href="5.html"><li>대변동</li></a>
           <a href="6.html"><li>앞으로 3년 경제전쟁의 미래</li></a>
-      </ol>
+        </ol>
       </div>
-      <div id="article">
-        <h4 style="margin-top:0;">12가지 인생의 법칙 - 조던 B. 피터슨</h4>
-        <p>인생을 더 가치있게 살도록 독려하는 책이다
-        패배주의에 물들어 그저 쉽게 포기하며 살고, 자기 자신 뿐만 아니라 주변 사람에게까지 악영향을 미치는 삶에 대해서는 무섭게 일침을 가한다.</p>
-        <p>항상 더 높은 가치를 지향하며, 올바르게 삶을 살려고 하는 것은 굉장히 어렵지만, 그만큼 충실하고 충만한 삶은 없을 것이다.</p>
-      </div>
+      <div class="content">
+        <h3>제목: 12가지 인생의 법칙</h3>
+        <h4><a href="https://ko.wikipedia.org/wiki/%EC%A1%B0%EB%8D%98_%ED%94%BC%ED%84%B0%EC%8A%A8" target="_blank" title="작가설명" style="text-decoration:underline;">작가: 조던 B. 피터슨</a></h4>
+        <p>짧은 감상평:</p>
+        <p>인생을 더 가치있게 살도록 독려하는 책이다.</p>
+        <p>패배주의에 물들어 그저 쉽게 포기하며 살고, 자기 자신 뿐만 아니라 주변 사람에게까지 악영향을 미치는 삶에 대해서는 무섭게 일침을 가한다. 항상 더 높은 가치를 지향하며, 올바르게 삶을 살려고 하는 것은 굉장히 어렵지만, 그만큼 충실하고 충만한 삶은 없을 것이다.</p>
+        <iframe title='NaverVideo' src='http://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=14F8664627E2C83D395BC2262953FCCA04AD&outKey=V129d39250b62941938944776d962044a080a74ed4bb2bdf55f3f4776d962044a080a&controlBarMovable=true&jsCallable=true&skinName=tvcast_white' frameborder='no' scrolling='no' marginwidth='0' marginheight='0' allowfullscreen WIDTH='544' HEIGHT='306' style='width:544px; height:306px;'></iframe>
+        </div>
     </div>
   </body>
 </html>

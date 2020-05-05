@@ -1,82 +1,81 @@
 <!doctype html>
 <html>
   <head>
-    <title>Jamie Book</title>
+    <title>~Jamie's Book~</title>
     <meta charset="utf-8">
     <style>
+      html {
+        height: 100%;
+      }
       body {
         font-family:Malgun Gothic;
+        height: 100%;
       }
       a {
         color:black;
         text-decoration:none;
       }
-      a:visited {
+      .index a:visited {
         color:gray;
       }
       h1 {
-        font-size:50px;
         text-align:center;
+        border-bottom:1px gray solid;
+        padding:15px;
+        margin:0;
+        color:purple;
       }
-      h3 {
-        color:red;
+      ul {
+        color:purple;
       }
-      p {
-        color:green;
+      #whole {
+        display:grid;
+        grid-template-columns:325px 1fr;
+        height:100%;
+      }
+      .index {
+        border-right:1px gray solid;
+      }
+      .index ol, ul {
+        padding-left:30px;
+      }
+      .content {
+        padding-left:10px;
       }
     </style>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-165263432-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-165263432-1');
-</script>
-
   </head>
-  <body>
-    <h1><a href="index.html">Jamie가 각 해에 엄선한 책</a></h1>
-책에 대한 상세한 내용은, 각 책의 제목을 클릭하세요. ^^
-    <h3>2019년 엄선 책</h3>
-    <ol>
-      <a href="1.html"><li>12가지 인생의 법칙 - 조던 B. 피터슨</li></a>
-      <a href="2.html" style="color:red; text-decoration:underline"><li>왜 세계의 절반은 굶주리는가? - 장 지글러</li></a>
-      <a href="3.html"><li>말그릇 - 김윤나</li></a>
-    </ol>
-    <h3>2020년 엄선 책</h3>
-    <ol>
-      <a href="4.html"><li>기본에 충실한 나라, 독일에서 배운다 - 양돈선</li></a>
-      <a href="5.html"><li>대변동 - 재레드 다이아몬드</li></a>
-      <a href="6.html"><li>환율과 금리로 보는 앞으로 3년 경제전쟁의 미래 - 오건영</li></a>
-    </ol>
-    <p style="margin-top:50px"><h4>왜 세계의 절반은 굶주리는가? - 장 지글러</h4></p>
-    <p>지구 인구 수의 2배를 먹일 수 있는 생산량이 있음에도 불구하고 왜 기아문제는 해결되지 않는가</p>
-    <p>그 이유에 대해서 경제적/사회구조적 문제를 이 책은 지적하고 있다.</p>
-    <p>또한 신자유주의 이데올로기 안에서 우리는 끊임없이 인류의 보편적 가치와 생존권에 대해 고민하고, 이를 지키지 위해 노력해야한다고 강조한다.</p>
-    <p style="margin-top:50px"><h5>대표 추천평</h5></p>
-    <p>나만 다 차지하고 살 수 있는 세상이 아니다. 서로 얽혀 있고 서로 의지해있다. 아무리 자기 것이라 하더라도 그 근원을 추적해보면 다른 누군가가 가져야 할 것을 도중에 가로챈 것이나 다름없다. 날마다 지구촌에서 하루에 3만 5,000명의 어린이들이 굶어 죽어가고 있다. 또 세계 전역에서 10억 명의 사람들이 하루 1달러, 우리 돈 천 원으로 하루를 살아간다. 이것이 이 지구별의 현실이다. 그렇기에 우리가 무엇을 갖고자 할 때 갖지 못한 사람들의 처지를 배려해야 한다. - 법정스님</p>
-    <img src="https://postfiles.pstatic.net/20091122_128/dolshoii_1258871951354U1boo_jpg/%EC%99%9C%EC%84%B8%EA%B3%84%EC%9D%98_%EC%A0%88%EB%B0%98%EC%9D%80_%EA%B5%B6%EC%A3%BC%EB%A6%AC%EB%8A%94%EA%B0%80_dolshoii.jpg?type=w3">
-    <div id="disqus_thread"></div>
-<script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://jamie-book2.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </body>
+  <body>
+    <h1><a href="index.html" style="color:purple">~Jamie의 매 해 추천 책~</a></h1>
+    <div id="whole">
+      <div class="index">
+        <ul style="margin-bottom:0;">
+          <li>2019</li>
+        </ul>
+        <ol style="margin-top:0;">
+          <a href="1.html"><li>12가지 인생의 법칙</li></a>
+          <a href="2.html" style="color:red;"><li>왜 세계의 절반은 굶주리는가 ☜</li></a>
+          <a href="3.html"><li>말그릇</li></a>
+        </ol>
+        <ul style="margin-bottom:0;">
+          <li>2020</li>
+        </ul>
+        <ol style="margin-top:0;">
+          <a href="4.html"><li>기본에 충실한 나라 독일에서 배운다</li></a>
+          <a href="5.html"><li>대변동</li></a>
+          <a href="6.html"><li>앞으로 3년 경제전쟁의 미래</li></a>
+        </ol>
+      </div>
+      <div class="content">
+        <h3>제목: 왜 세계의 절반은 굶주리는가</h3>
+        <h4><a href="https://ko.wikipedia.org/wiki/%EC%A1%B0%EB%8D%98_%ED%94%BC%ED%84%B0%EC%8A%A8" target="_blank" title="작가설명" style="text-decoration:underline;">작가: 장 지글러</a></h4>
+        <p>짧은 감상평:</p>
+        <p>지구 인구 수의 2배를 먹일 수 있는 생산량이 있음에도 불구하고 왜 기아문제는 해결되지 않는가. 그 이유에 대해서 경제적/사회구조적 문제를 이 책은 지적하고 있다.</p>
+        <p>또한 신자유주의 이데올로기 안에서 우리는 끊임없이 인류의 보편적 가치와 생존권에 대해 고민하고, 이를 지키지 위해 노력해야한다고 강조한다.</p>
+        <p style="margin-top:50px">유명인 대표 추천평:</p>
+        <p>나만 다 차지하고 살 수 있는 세상이 아니다. 서로 얽혀 있고 서로 의지해있다. 아무리 자기 것이라 하더라도 그 근원을 추적해보면 다른 누군가가 가져야 할 것을 도중에 가로챈 것이나 다름없다. 날마다 지구촌에서 하루에 3만 5,000명의 어린이들이 굶어 죽어가고 있다. 또 세계 전역에서 10억 명의 사람들이 하루 1달러, 우리 돈 천 원으로 하루를 살아간다. 이것이 이 지구별의 현실이다. 그렇기에 우리가 무엇을 갖고자 할 때 갖지 못한 사람들의 처지를 배려해야 한다. - 법정스님</p>
+        <img src="https://postfiles.pstatic.net/20091122_128/dolshoii_1258871951354U1boo_jpg/%EC%99%9C%EC%84%B8%EA%B3%84%EC%9D%98_%EC%A0%88%EB%B0%98%EC%9D%80_%EA%B5%B6%EC%A3%BC%EB%A6%AC%EB%8A%94%EA%B0%80_dolshoii.jpg?type=w3">
+      </div>
+    </div>
+  </body>
 </html>
