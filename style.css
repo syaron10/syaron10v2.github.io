@@ -15,10 +15,10 @@ a {
 }
 h1 {
   text-align:center;
-  border-bottom:1px gray solid;
+  border-bottom:1px green solid;
   padding:15px;
   margin:0;
-  color:purple;
+  color:blue;
 }
 ul {
   color:red;
@@ -29,7 +29,7 @@ ul {
   height:100%;
 }
 .index {
-  border-right:1px gray solid;
+  border-right:1px green solid;
 }
 .index ol, ul {
   padding-left:30px;
