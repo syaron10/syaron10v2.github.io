@@ -4,6 +4,7 @@ html {
 body {
   font-family:Malgun Gothic;
   height: 100%;
+  background-color: powderblue;
 }
 a {
   color:black;
@@ -20,7 +21,7 @@ h1 {
   color:purple;
 }
 ul {
-  color:pink;
+  color:red;
 }
 #whole {
   display:grid;
