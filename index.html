@@ -17,12 +17,16 @@ gtag('config', 'UA-165263432-1');
 
   <body>
     <input type="button" value="night" onclick="
-      document.querySelector('body').style.backgroundColor ='black';
-      document.querySelector('body').style.color ='white';
-    ">
-    <input type="button" value="day" onclick="
-      document.querySelector('body').style.backgroundColor ='white';
-      document.querySelector('body').style.color ='black';
+      var target = document.querySelector('body');
+      if(this.value ==='night' ){
+        target.style.backgroundColor ='black';
+        target.style.color ='white';
+        this.value ='day';
+      } else {
+        target.style.backgroundColor ='white';
+        target.style.color ='black';
+        this.value ='night';
+      }
     ">
     <a href="index.html"><h1>~Jamie의 매 해 추천 책~</h1></a>
     <div id="whole">
