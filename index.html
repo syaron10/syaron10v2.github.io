@@ -18,14 +18,40 @@ gtag('config', 'UA-165263432-1');
   <body>
     <input type="button" value="night" onclick="
       var target = document.querySelector('body');
+      var alist = document.querySelectorAll('a');
+      var ulli = document.querySelectorAll('ul li');
       if(this.value ==='night' ){
         target.style.backgroundColor ='black';
         target.style.color ='white';
         this.value ='day';
+
+        var i = 0;
+        while(i < alist.length){
+            alist[i].style.color = 'powderblue';
+            i++;
+        }
+
+        var x=0;
+        while(x<ulli.length){
+            ulli[x].style.color='pink';
+            x++;
+        }
       } else {
         target.style.backgroundColor ='white';
         target.style.color ='black';
         this.value ='night';
+
+        var i = 0;
+        while(i < alist.length){
+            alist[i].style.color = 'purple';
+            i++;
+        }
+
+        var x=0;
+        while(x<ulli.length){
+            ulli[x].style.color='red';
+            x++;
+        }
       }
     ">
     <a href="index.html"><h1>~Jamie의 매 해 추천 책~</h1></a>
